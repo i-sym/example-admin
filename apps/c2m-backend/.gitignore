@@ -1,0 +1,5 @@
+uploads/
+*.ply
+*.splat
+node_modules/
+dist/

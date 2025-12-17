@@ -1,0 +1,58 @@
+{
+  "name": "@repo/database",
+  "description": "Shared schemas for the repository",
+  "version": "0.0.1",
+  "private": true,
+  "files": [
+    "dist/**"
+  ],
+  "main": "./dist/index.js",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.js"
+    },
+    "./repositories": {
+      "types": "./dist/repositories/index.d.ts",
+      "import": "./dist/repositories/index.js",
+      "require": "./dist/repositories/index.js"
+    },
+    "./schema": {
+      "types": "./dist/schema/index.d.ts",
+      "import": "./dist/schema/index.js",
+      "require": "./dist/schema/index.js"
+    },
+    "./client": {
+      "types": "./dist/client/index.d.ts",
+      "import": "./dist/client/index.js",
+      "require": "./dist/client/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsc --build",
+    "clean": "rm -rf dist",
+    "dev": "tsc --build --watch --preserveWatchOutput",
+    "lint": "eslint \"src/**/*.ts*\" --max-warnings 0",
+    "test": "jest"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@repo/eslint-config": "*",
+    "@repo/typescript-config": "*",
+    "@types/node": "^20.11.24",
+    "drizzle-kit": "^0.31.1",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "typescript": "5.5.4"
+  },
+  "dependencies": {
+    "@hono/zod-openapi": "^0.19.8",
+    "@repo/schemas": "*",
+    "postgres": "^3.4.7",
+    "zod": "^3.25.56"
+  },
+  "packageManager": "pnpm@10.11.0",
+}

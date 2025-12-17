@@ -1,0 +1,5 @@
+k8s/
+.env
+node_modules
+.dockerignore
+uploads/

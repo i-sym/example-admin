@@ -1,0 +1,42 @@
+{
+  "name": "@repo/schemas",
+  "description": "Shared schemas for the repository",
+  "version": "0.0.1",
+  "private": true,
+  "type": "module",
+  "exports": {
+    ".": {
+      "types": "./src/index.ts",
+      "default": "./dist/index.js"
+    },
+    "./entities": {
+      "types": "./src/entities/index.ts",
+      "default": "./dist/entities/index.js"
+    },
+    "./provision": {
+      "types": "./src/provision/index.ts",
+      "default": "./dist/provision/index.js"
+    },
+    "./dev-entities": {
+      "types": "./src/dev-entities/index.ts",
+      "default": "./dist/dev-entities/index.js"
+    }
+  },
+  "scripts": {
+    "build": "tsup --clean",
+    "check-types": "tsc --noEmit",
+    "dev": "tsup --watch"
+  },
+  "devDependencies": {
+    "@jest/globals": "^29.7.0",
+    "@repo/typescript-config": "workspace:*",
+    "@types/node": "^20.11.24",
+    "eslint": "^8.57.0",
+    "jest": "^29.7.0",
+    "typescript": "5.5.4"
+  },
+  "dependencies": {
+    "tsup": "^8.5.0",
+    "zod": "^3.25.56"
+  }
+}

@@ -1,0 +1,11 @@
+{
+    "out": "./drizzle",
+    "schema": "./src/schema/index.ts",
+    "dialect": "postgresql",
+    "dbCredentials": {
+        "url": "postgresql://postgres:5a1aMz4u1KW3v3SpJbYFndUes2PZzDnS@staging-c2m-database.cvomgs4cssx5.eu-north-1.rds.amazonaws.com:5432/postgres?sslmode=no-verify",
+        "ssl": {
+            "rejectUnauthorized": true
+        }
+    }
+}
