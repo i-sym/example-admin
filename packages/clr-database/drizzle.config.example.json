@@ -1,8 +1,0 @@
-{
-    "out": "./drizzle",
-    "schema": "./src/schema/index.ts",
-    "dialect": "postgresql",
-    "dbCredentials": {
-        "url": ""
-    }
-}

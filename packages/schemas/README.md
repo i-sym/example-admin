@@ -6,8 +6,6 @@ This is a package that contains schema/type definitions for all knowledge within
 
 We use Zod for schema definitions. Each schema is defined in its own file, and the file name should match the schema name with a `.schema.ts` suffix. If there are multiple schemas related to the same entity, they should be grouped in the folder and named accordingly.
 
-Information is in `guidelines.md`.
-
 ## Naming Conventions
 
 ### File Names
